@@ -27,11 +27,10 @@ body {
 }
 }
 
-.layout,
-.layout--narrow {
+.layout.layout--narrow {
   display: block;
   width: 500px;
-  margin: 0 auto 0;
+  margin: 0 auto;
 }
 
 .task-form__input {
@@ -62,7 +61,9 @@ body {
   outline: none;
 }
 
-.task-form__submit {
+.task-form__submit,
+.task-item__delete-btn,
+.task-item__edit-btn {
   background: none;
   border: 0;
   color: #888;
@@ -78,7 +79,7 @@ body {
   color: #3a3a3a;
 }
 
-.task-section__title,
+.task-section__title ,
 .add-item__title {
   color: #333;
   font-weight: 700;
@@ -89,7 +90,7 @@ body {
   text-transform: uppercase;
 }
 
-.task-form__input,
+.task-form__input ,
 .task-item__edit {
   margin: 0;
   font-size: 18px;
@@ -103,7 +104,7 @@ body {
   color: #888;
 }
 
-.task-form__input:focus,
+.task-form__input:focus ,
 .task-item__edit:focus  {
   color: #333;
 }
@@ -151,13 +152,11 @@ body {
   transition: transform 200ms ease-in;
 }
 
-.task-item__delete-btn:hover,
-.task-item__delete-icon {
+.task-item__delete-btn:hover .task-item__delete-icon {
   transform: rotateZ(0);
 }
 
-.task-list--completed,
-.task-item__label {
+.task-list--completed .task-item__label {
   text-decoration: line-through;
   color: #888;
 }
@@ -166,13 +165,11 @@ body {
   display: none;
 }
 
-.task-item--editing,
-.task-item__edit {
+.task-item--editing .task-item__edit {
   display: inline-block;
   width: 224px;
 }
 
-.task-item--editing,
-.task-item__label {
+.task-item--editing .task-item__label {
   display: none;
 }

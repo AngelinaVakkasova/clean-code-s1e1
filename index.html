@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Todo App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="hero">
-      <div class="hero__media aaa">
+      <div class="hero__media">
         <img src="./eisenhower-matrix.jpg" class="hero__image" alt="Матрица Эйзенхауэра: важное/срочное">
-        <a class="hero__more-info more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+        <a class="hero__more-info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
       </div>
     </header>
-    <main class="layout layout--narrow centered-main-page-element">
+    <main class="layout layout--narrow">
       <section class="add-item" aria-labelledby="add-item-title">
-        <h1 class="add-item__title" id="topSectionForAddingElementToList">Add Item</h1>
-        <form class="task-form task-row-wrapper" action="#" method="post">
-
-          <input id="new-task" class="task-form__input task" type="text" name="task" />
-          <button type="submit">Add</button>
+        <h1 class="add-item__title" id="add-item-title">Add Item</h1>
+        <form class="task-form" action="#" method="post">
+          <input id="new-task" class="task-form__input" type="text" name="task"/>
+          <button class="task-form__submit" type="submit">Add</button>
         </form>
       </section>
       <section class="task-section" aria-labelledby="todo-title">
         <h2 class="task-section__title" id="todo-title">Todo</h2>
-        <ul class="task-list" id="incompleteTasks">
+        <ul class="task-list" id="todo-list">
           <li class="task-item">
-            <input id="task-1" class="task-item__checkbox" type="checkbox" />
-            <label for="task-1" class="task-item__label task">Pay Bills</label>
-            <input type="text" class="task-item__edit task" aria-label="Редактировать: Pay Bills" />
-            <button class="task-item__edit-btn edit" type="button">Edit</button>
-            <button class="task-item__delete-btn delete" type="button" aria-label="Удалить задачу «Pay Bills»">
-              <img src="./remove.svg" class="task-item__delete-icon" alt="" />
+            <input id="task-1" class="task-item__checkbox" type="checkbox"/>
+            <label for="task-1" class="task-item__label">Go Shopping</label>
+            <input type="text" class="task-item__edit" aria-label="Редактировать: Go Shopping" />
+            <button class="task-item__edit-btn" type="button">Edit</button>
+            <button class="task-item__delete-btn" type="button" aria-label="Удалить задачу «Go Shopping»">
+              <img src="./remove.svg" class="task-item__delete-icon" alt=""/>
             </button>
           </li>
-          <li class="task-item task-item--editing editMode">
+          <li class="task-item task-item--editing">
             <input id="task-2" class="task-item__checkbox" type="checkbox" />
-            <label for="task-2" class="task-item__label task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task-item__edit task" aria-label="Редактировать: Go Shopping"/>
-            <button class="task-item__edit-btn edit" type="button">Save</button>
-            <button class="task-item__delete-btn delete" type="button" aria-label="Удалить задачу «Go Shopping»">
+            <label for="task-2" class="task-item__label">New task</label>
+            <input type="text" value="New task" class="task-item__edit" aria-label="Редактировать: New task"/>
+            <button class="task-item__edit-btn" type="button">Save</button>
+            <button class="task-item__delete-btn" type="button" aria-label="Удалить задачу «New task»">
               <img src="./remove.svg" class="task-item__delete-icon" alt=""/>
             </button>
           </li>
@@ -48,13 +47,13 @@
       </section>
       <section class="task-section" aria-labelledby="completed-title">
         <h2 class="task-section__title" id="completed-title">Completed</h2>
-        <ul class="task-list task-list--completed" id="completed-tasks">
+        <ul class="task-list task-list--completed" id="completed-list">
           <li class="task-item">
             <input id="task-3" class="task-item__checkbox" type="checkbox" checked />
-            <label for="task-3" class="task-item__label task">See the Doctor</label>
-            <input type="text" class="task-item__edit task" aria-label="Редактировать: See the Doctor" />
-            <button class="task-item__edit-btn edit" type="button">Edit</button>
-            <button class="task-item__delete-btn delete" type="button" aria-label="Удалить задачу «See the Doctor»">
+            <label for="task-3" class="task-item__label">See the Doctor</label>
+            <input type="text" class="task-item__edit" aria-label="Редактировать: See the Doctor"/>
+            <button class="task-item__edit-btn" type="button">Edit</button>
+            <button class="task-item__delete-btn" type="button" aria-label="Удалить задачу «See the Doctor»">
               <img src="./remove.svg" class="task-item__delete-icon" alt="" />
             </button>
           </li>
